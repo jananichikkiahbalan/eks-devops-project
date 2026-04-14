@@ -1,5 +1,5 @@
 frontend:
-  replicaCount: 1
+  replicaCount: 2
 
   image:
     repository: jananibalan/frontend
@@ -14,7 +14,7 @@ frontend:
     nodePort: 30007
 
 backend:
-  replicaCount: 1
+  replicaCount: 2
 
   image:
     repository: jananibalan/backend
@@ -35,7 +35,7 @@ backend:
     DB_PASSWORD: "todo_pass"
 
 mysql:
-  replicaCount: 1
+  replicaCount: 2
 
   image: mysql
   tag: "8.0.45-debian"
